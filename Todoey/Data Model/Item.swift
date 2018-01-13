@@ -9,10 +9,11 @@
 import Foundation
 
 
-class Item {
+class Item: Codable {
     var title: String = ""
     var done: Bool = false
-    
+ 
+//Encodable means it can be encoded into a plist or a JSON
 // init(title: String, completed: Bool) {
 // self.title = title
 // self.completed = completed
